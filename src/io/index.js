@@ -1,3 +1,1 @@
-import {io} from '../'
-
-io.of('')
+import './room.io'

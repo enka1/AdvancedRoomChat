@@ -8,7 +8,9 @@ const server = http.createServer(app)
 export const io = socketIO(server)
 
 //api
-require('./api/room');
+require('./api')
+//event cast
+require('./io')
 
 app.use(cors())
 server.listen(3001, () => console.log('server is opening at port 3001'))
